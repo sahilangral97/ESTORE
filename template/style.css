@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Courier New", "Monospace";
+}
+
+.grid_area {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: "header";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #7b62f1, #5333ed, #3513da);
+}
+
+footer {
+  color: white;
+  grid-area: "footer";
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #674aef, #5333ed, #3f1ceb);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 700;
+}
+a:hover {
+  color: #cded33;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.product_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  border-width: 2.5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0.8rem;
+}
+.image > a > img {
+  width: 22rem;
+}
+
+.card_body div a {
+  padding: 0 !important;
+  color: #6e7076;
+}
+
+.card_body {
+  padding: 10px;
+}
+
+.price {
+  color: #6e7076;
+}
+
+.rating span {
+  color: gold;
+}
+
+.card_body div {
+  margin-bottom: 5px;
+}
